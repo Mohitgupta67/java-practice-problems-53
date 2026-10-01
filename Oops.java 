@@ -1,0 +1,39 @@
+class Oops {
+    String guestName;
+    int roomNumber;
+    String roomType;
+    int amount;
+    int count;
+    int Cash;
+
+     Oops(String guestName , int roomNumber , String roomType ) {
+   this.guestName  = guestName;
+   this.roomNumber = roomNumber;
+    this.roomType= roomType;
+     }
+  
+    void pricePerNight(int amount) { 
+        this.amount = amount;
+    }
+    void noOfNight(int count) {
+      this.count = count;
+    }
+    void totalMoney(int Cash) {
+        this.Cash = amount * count;  
+    }
+   
+        public static void main(String args[]) {
+
+            Oops h1 = new Oops("Mohit gupta" , 1 , "Single");
+        System.out.println("guest Name:" + h1.guestName);
+        System.out.println("room Number:" + h1.roomNumber);
+        System.out.println("room Tyep:" + h1.roomType);
+          
+        h1.pricePerNight(5000);
+        System.out.println("price Per Night:" + h1.amount);
+        h1.noOfNight(5);
+        System.out.println("No of nights:" + h1.count);
+        h1.totalMoney(5);
+        System.out.println("Total Money:" + h1.Cash);
+        }
+    }
